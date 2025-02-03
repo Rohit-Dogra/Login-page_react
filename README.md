@@ -1,3 +1,18 @@
+This project is a responsive login page built with React and Material-UI, designed to provide a sleek and modern user interface. The application is optimized for tablet screens (768px) and maintains a 1:2 aspect ratio, making it visually appealing and user-friendly.
+Features
+Responsive Design: The layout adjusts seamlessly for various screen sizes, particularly optimized for tablets.
+Modern UI: Utilizes Material-UI components for a clean and professional look.
+Customizable Theme: The color scheme can be easily modified to fit different branding requirements.
+User-Friendly Form: Includes fields for username and password with clear labels and placeholder text.
+Hover Effects: Buttons change color on hover to enhance interactivity.
+Accessibility: Input fields are designed to be accessible with proper labeling.
+Technologies Used
+React: A JavaScript library for building user interfaces.
+Material-UI: A popular React UI framework that provides pre-designed components.
+CSS: For custom styling and layout adjustments.
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
