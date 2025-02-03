@@ -1,0 +1,135 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* scrolling */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ /* background: linear-gradient(135deg, #0f172a, #1e293b); 
+}*/
+transition: background 0.3s ease, color 0.3s ease;
+}
+
+body.dark-theme {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+}
+
+body:not(.dark-theme) {
+  background: linear-gradient(135deg, #e0eafc, #cfdef3);
+  color: #333;
+}
+
+.theme-toggle-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #00ffff;
+}
+
+body:not(.dark-theme) .theme-toggle-icon {
+  color: #333;
+}
+
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  width: 100vw;  
+  padding: 0 20px;
+}
+
+
+.login-box {
+  width: 50%; /* Default width for laptop */
+  max-width: 380px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.1); 
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+body:not(.dark-theme) .login-box {
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-icon {
+  font-size: 50px;
+  color: #00ffff; 
+  margin-bottom: 10px;
+}
+
+
+.bold-text {
+  font-weight: bold;
+  font-size: 24px;
+  color: #00ffff;
+}
+
+
+.login-box input {
+  width: 90%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  outline: none;
+  text-align: center;
+}
+body:not(.dark-theme) .login-box input {
+  background: rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+
+.login-box input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+body:not(.dark-theme) .login-box input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+/* Button */
+.login-box button {
+  width: 98%;
+  padding: 12px;
+  border: none;
+  background-color: #00ffff;
+  color: #1e293b;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+}
+
+
+.login-box button:hover {
+  background-color: #00d4d4;
+}
+
+@media screen and (max-width: 768px) {
+  .login-box {
+    width: 60%; 
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .login-box {
+    width: 80%; 
+  }
+}
